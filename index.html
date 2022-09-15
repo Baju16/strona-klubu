@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS SOKÓŁ KAMIEŃ</title>
+    <style>
+        @media screen and (max-width:1300px){
+            .navigation{
+                display:none;
+            }
+
+            .content{
+                width:100%!important;
+            }
+            .baner{
+            width:100%;
+            height:auto;
+            margin-top: 0px!important;
+            
+            }
+            .navbar{
+                height: 50px!important;
+                display: flex !important;
+                justify-content: space-between!important;
+            }
+            .logo{
+
+                width:50px!important;
+                transform:translateY(25px);
+            }
+            .baner_case{
+                background:url("image/baner_portrait.jpg")!important;
+                background-repeat: no-repeat!important;
+                width: 100%!important;
+                height:500px!important;
+                background-size: 100%!important;
+            
+            }
+            .logo_case{
+                width: 20% !important;;
+            }
+            .hamburger{
+                display: block!important;
+                margin-right: 30px;
+                cursor:pointer;
+            }
+            
+            
+        }
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{                              /*cały kontener*/
+            width:100%;
+            height:200vh;
+            background-color: rgb(40, 40, 40);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{                                 /*nagłówek*/
+            width:100%;
+            height:40px;
+            background-color: rgb(136, 136, 50);
+        }
+        .navbar{                                 /*navigacja + logo*/
+            width:100%;
+            height:100px;
+            top:0;
+            position:sticky;
+            position: -webkit-sticky;
+            background-color: yellow;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+
+        }
+        .logo_case{                              /*pojemnik na logo*/
+            width:200px;
+            height:100px;
+            text-align: center;
+        }
+        .navigation{                             /*pasek nawigacji*/
+            width:1000px;
+            height:60px;
+            /* background-color: lightgreen; */
+            position:relative;
+        }
+        .content{                               /*zawartość strony*/
+            width:1300px;
+            height:100%;
+            background-color: rgb(80, 80, 80);
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .logo{                                  /*logo-zdjęcie*/
+            width:100px;
+            height:auto;
+        }
+
+        ul{
+            /* background-color: rgb(193, 193, 148); */
+            display:flex;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        li{
+            /* background-color: grey; */
+            padding-top: 20px;
+            height:60px;
+            font-size:20px;
+            align-items:center;
+            cursor:pointer;
+        }
+                            /*nawigacja*/
+        ul li:after{
+            content:"";
+            width:0%;
+            height:2px;
+            display:block;
+            background-color: black;
+            transition:.2s;
+        }
+        ul li:hover::after{
+            width:100%;
+        }
+
+       
+        .baner_case{
+            width: 100%;
+            height:500px;
+            background: url("image/baner.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+
+        .baner{
+            width:100%;
+            height:auto;
+            margin-top: -100px;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+        .hamburger_menu{
+            z-index: 1;
+            position:fixed;
+            color:yellow;
+            background-color:black;
+            top:-420px;
+            width:100vw;
+            height:auto;
+            transition:0.5s;
+        
+        }
+        .hamburger_menu ul{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .hamburger_menu ul li{
+           height:20px;
+           border:1px solid rgb(49, 49, 49);
+           line-height:10%;
+        }
+
+        .hamburger_menu ul li:hover{
+            color:orange;
+        }
+
+        .load{
+            top:0px;
+            
+        }
+        .video{
+            text-align: center;
+            width: 100%;
+            height:auto;
+            background-color: yellow;
+            padding: 0;
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color:currentColor;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        
+        <div class="navbar">
+            <div class="logo_case">
+                <img class="logo" src="image/logo.png">
+            </div>
+            <div class="hamburger"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAOElEQVRIie3TsQkAMAwDwSf7b+XBnCqQ1hC7yR+oFioEkhoEkM2JU7YGBt1yuE+/807SM95JUskGsVVPTkFzAfwAAAAASUVORK5CYII="></div>
+            <div class="hamburger_menu">
+                <ul>
+                    <li>Klub<a></a></li>
+                    <li>Aktualności<a></a></li>
+                    <li>Rozgrywki<a></a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li>Historia<a></a></li>
+                    <li>Terminarz<a></a></li>
+                    <li>Kadra<a></a></li>
+                    <li>Statystyki<a></a></li>
+                    <li>Sponsorzy<a></a></li>
+                    <li>Tabela<a></a></li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li>Klub<a></a></li>
+                    <li>Aktualności<a></a></li>
+                    <li>Rozgrywki<a></a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li>Historia<a></a></li>
+                    <li>Terminarz<a></a></li>
+                    <li>Kadra<a></a></li>
+                    <li>Statystyki<a></a></li>
+                    <li>Sponsorzy<a></a></li>
+                    <li>Tabela<a></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="baner_case">
+                <!-- <img class="baner" src="image/baner.jpg"> -->
+            </div>
+            <div class="video">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100057272215650%2Fvideos%2F443566167644957%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        let hamburgerMenu = document.querySelector('.hamburger_menu');
+            hamburger.addEventListener('click', function(){
+            hamburgerMenu.classList.toggle('load');
+        })
+            hamburgerMenu.addEventListener('click', function(){
+            hamburgerMenu.classList.toggle('load');
+        })
+
+    </script>
+</body>
+</html>
