@@ -8,6 +8,26 @@
     .gallery h1{
         font-size:30px!important;         
     }
+    
+    .gallery .images a{
+        /* position:relative; */
+        /* overflow:hidden; */
+        flex-basis:90%!important;
+
+        /* background-color: gray; */
+        
+    }
+    
+    .gallery .images{
+       
+        min-height: 100%;
+        min-width: 100%;
+        transform: translateX(-10%);
+    }
+
+   
+
+   
 }
 
 body{
@@ -54,6 +74,7 @@ body{
     position:relative;
     /* overflow:hidden; */
     flex-basis:45%;
+    height:20%;
     overflow: hidden;
     /* background-color: gray; */
     
