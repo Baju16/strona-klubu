@@ -1,3 +1,17 @@
+
+@media (max-width:1024px){
+  .lightbox {
+    position: absolute;
+    left: 0;
+    width: 40%!important;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    outline: none;
+  }
+}
+
 body.lb-disable-scrolling {
   overflow: hidden;
 }
@@ -49,7 +63,7 @@ body.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: black;
 }
 
 .lb-outerContainer:after {
